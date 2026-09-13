@@ -304,7 +304,7 @@ export function LogoV2({
         <Box flexDirection="column" flexShrink={1}>
           <Text wrap="truncate-end">
             {sweep('✦ dsh-TUI', t, wordmarkRGB, wordmarkShimmerRGB, 60)}
-            <Text dimColor>{'  v' + VERSION}</Text>
+            <Text dimColor>{'  v' + VERSION + ' · fork'}</Text>
           </Text>
           {bigDeepSeek.map((row, index) => (
             <Text key={`ds-${index}`} wrap="truncate-end">
