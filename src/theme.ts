@@ -239,18 +239,18 @@ const rgb = (hex: string): string => {
 const darkTheme: Theme = {
   autoAccept: rgb('#B3A0D4'), // Soft violet
   bashBorder: rgb('#D194AE'), // Mist rose
-  accent: rgb('#7DA1DE'), // Accent Soft — mist brand blue
+  accent: rgb('#4D6BFE'), // our brand blue (fork default)
   toolNameMutate: rgb('#E5C07B'), // soft gold — Edit/Write (warm accent)
   toolNameExec: rgb('#56B6C2'), // mist cyan — Bash/exec tools
-  accentShimmer: rgb('#ABC2EC'), // Border Blue for shimmer effect
-  activity: rgb('#7DA1DE'),
+  accentShimmer: rgb('#8FA5FF'), // our brand blue shimmer (fork default)
+  activity: rgb('#4D6BFE'),
   activityShimmer: rgb('#ABC2EC'),
   permission: rgb('#ABC2EC'), // Border Blue — pane/dialog accent
   permissionShimmer: rgb('#C9D7F2'),
   planMode: rgb('#7FAE99'), // Muted sage green
   ide: rgb('#5E88CC'), // Accent Blue
   promptBorder: rgb('#55606F'), // Muted blue-gray
-  promptBorderShimmer: rgb('#7DA1DE'),
+  promptBorderShimmer: rgb('#4D6BFE'),
   text: rgb('#E8E6E0'), // Warm off-white (from #F6F3ED)
   inverseText: rgb('#22262E'), // Deep warm charcoal (from #343945)
   inactive: rgb('#8D95A6'), // Mist gray-blue — feeds dimColor
@@ -321,18 +321,18 @@ const darkTheme: Theme = {
 const lightTheme: Theme = {
   autoAccept: rgb('#9B86B8'), // Muted violet (from surface-alt pink-mist)
   bashBorder: rgb('#C07A93'), // Muted rose (from surface-alt pink-mist)
-  accent: rgb('#3F6CC4'), // Primary Blue — brand
+  accent: rgb('#2F4FD8'), // our brand blue (fork default, light bg)
   toolNameMutate: rgb('#8A6A00'), // deep gold - Edit/Write (warm accent)
   toolNameExec: rgb('#0F7A8A'), // deep cyan - Bash/exec tools
-  accentShimmer: rgb('#5E88CC'), // Accent Blue for shimmer effect
-  activity: rgb('#3F6CC4'),
+  accentShimmer: rgb('#4D6BFE'), // our brand blue shimmer (fork default)
+  activity: rgb('#2F4FD8'),
   activityShimmer: rgb('#5E88CC'),
   permission: rgb('#3F6CC4'), // Primary Blue — pane/dialog accent
   permissionShimmer: rgb('#5E88CC'),
   planMode: rgb('#4E9675'), // Sage green
   ide: rgb('#5E88CC'), // Accent Blue
   promptBorder: rgb('#ABC2EC'), // Border Blue
-  promptBorderShimmer: rgb('#7DA1DE'), // Accent Soft
+  promptBorderShimmer: rgb('#4D6BFE'), // Accent Soft
   text: rgb('#343945'), // Ink
   inverseText: rgb('#F6F3ED'), // Warm off-white (on colored fills)
   inactive: rgb('#8991A0'), // Text-muted — feeds dimColor

@@ -43,7 +43,10 @@
 - id: llm-deepseek
   config:
     apiKeyEnv: 'DEEPSEEK_API_KEY'
-    baseURL: !!js process.env.DEEPSEEK_BASE_URL
+    # Fork default: OpenCode Go (env still wins when set). Without this fallback the
+    # patch layer overrides the composed baseURL with `undefined`, and requests fall
+    # back to api.deepseek.com - which 401s a Go key.
+    baseURL: !!js process.env.DEEPSEEK_BASE_URL || 'https://opencode.ai/zen/go/v1'
     thinking: enabled
     reasoningEffort: max
 
