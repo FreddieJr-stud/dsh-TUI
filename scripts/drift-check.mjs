@@ -1,6 +1,6 @@
 // Deterministic drift check: does the UI still consider the installed engine unvalidated?
 import { UPSTREAM_VALIDATED_VERSION, UPSTREAM_VALIDATED_VERSIONS, upstreamDrift, upstreamDriftSummary }
-  from './lib/types/dsh-adapter/contract.js'
+  from '../lib/types/dsh-adapter/contract.js'
 
 console.log('validated (primary):', UPSTREAM_VALIDATED_VERSION)
 console.log('accepted lines      :', UPSTREAM_VALIDATED_VERSIONS.join(', '))
