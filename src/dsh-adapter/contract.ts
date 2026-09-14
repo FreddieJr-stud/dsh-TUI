@@ -17,12 +17,14 @@ import { readFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 
 /** Primary validated upstream line (newest). */
-export const UPSTREAM_VALIDATED_VERSION = '0.1.5-rc.1'
+export const UPSTREAM_VALIDATED_VERSION = '0.1.5-rc.2'
 
 /**
  * Explicitly supported upstream prerelease lines, oldest first.
  *
- * 0.1.5-rc.1 = primary continuous-CI line; 0.1.5-alpha.2/alpha.1 = mapped
+ * 0.1.5-rc.2 = primary continuous-CI line (fork retarget, 2026-09-14);
+ * 0.1.5-rc.1 = previous primary, kept as a mapped compatibility line so an
+ * install on it does not report drift; 0.1.5-alpha.2/alpha.1 = mapped
  * compatibility lines (source-checked when the primary line moves);
  * 0.1.3-alpha.2 = compatibility line (the only 0.1.3 build on npm);
  * 0.1.2-rc.1 = previous family (full CI coverage); 0.1.2-alpha.3–alpha.5 =
@@ -48,6 +50,7 @@ export const UPSTREAM_VALIDATED_VERSIONS = [
   '0.1.5-alpha.1',
   '0.1.5-alpha.2',
   '0.1.5-rc.1',
+  '0.1.5-rc.2',
 ] as const
 
 /**
